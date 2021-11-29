@@ -1,0 +1,46 @@
+body{
+    background-color:rebeccapurple;
+}
+#main
+{
+    visibility: visible;
+    text-align: center;
+    font-size: large;
+    
+    
+}#Available,#AvailableCourses,#Enroll
+{
+    visibility: hidden;
+    text-align: center;
+    font-size: medium;
+    
+}
+
+#Registration,#login
+{
+    visibility: hidden;
+    text-align: center;
+    font-size: medium;
+    
+}
+
+button
+{
+    background-color: red;
+    color: white;
+  
+}
+#background
+{
+    width: 30%;
+    height: 600px;
+    text-align: center;
+    background-color: aqua;
+    
+}
+label
+{
+    position: center;
+    text-align: center;
+    
+}

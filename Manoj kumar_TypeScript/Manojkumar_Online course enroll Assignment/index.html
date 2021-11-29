@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online course enroll</title>
+        <link rel="stylesheet" href="Styles/online course enroll.css">
+        <script type="text/javascript" src="Script/course.js"></script>
+    </head>
+    <body>
+        <center>
+            <div id="background">
+                <div id="main">
+                    <h3>Home</h3>
+                    <button onclick="userregistration()">User Registration</button>
+                    <button onclick="login()">Login</button>
+                </div>
+                <div id="Registration">
+                    <h2>Welcome to Registration process</h2>
+                    <form>
+                    <Label>Name:</Label>
+                    <input type="text" placeholder="Name" id="name" required>
+                    <br>
+                
+                    <label>Age:</label>
+                    <input type="number" placeholder="Age" id="age" required><br>
+                    
+                    <label>Mobile Number:</label>
+                    <input type="number" placeholder="Mobile Number" id="number" required>
+                    <button onclick="add()">Submit</button>
+                </form>
+                </div>
+                <div id="login">
+                    <h2>Login Page</h2>
+                    <label>User Id:</label>
+                    <input text="text" id="validation"><br>
+                    <button onclick="Validation()">Login</button>
+                </div>
+                
+                <div id="Available">
+                    <h2>Select any one of the below</h2>
+                    <button onclick="Availablecourses()">Available</button>
+                    <button onclick="Enrolled()">Enrolled Courses</button>
+                </div>
+                <div id="AvailableCourses">
+                    
+                    <label>List of Available courses</label><br>
+                    <select onchange="courseList()" id="userchoice" multiple>
+                        <option  onclick="css()"value="css">css</option>
+                        <option onclick="Html()" value="HTML">Html</option>
+                        <option onclick="C()" value="c#">C#</option>
+                        <option  onclick="js()"value="JavaScript">JavaScript</option>
+                        <option  onclick="td()"value="TypeScript">Typescript</option>
+                        <option  onclick="MYSQL()"value="MySQL">MYSQl</option>
+                    </select>
+                    <label>How many days you want to completer the course</label><input type="text" id="details"><br>
+                    <button onclick="Enroll()">Enroll</button>
+                    <label id="coursesname" style="visibility: hidden;"></label>
+                
+                
+                </div>
+                <div id="Enroll">
+                    <label>Your courses are</label>  <br>
+                    <label id="course"></label>
+                    <button onclick="submit()">Submit</button>
+                </div>
+            </div></center>
+    </body>
+</html>
